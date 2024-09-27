@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-poppins
+}
+
+
+.ReactFlagsSelect-module_selectValue__152eS>.ReactFlagsSelect-module_label__27pw9 {
+    font-size: 0rem !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+    border: transparent !important;
+}
+
+.ReactFlagsSelect-module_selectOptions__3LNBJ {
+
+    @apply w-[200px] md:w-[393px]
+}
