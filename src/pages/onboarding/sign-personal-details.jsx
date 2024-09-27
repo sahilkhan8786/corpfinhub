@@ -1,6 +1,6 @@
 import React from 'react'
 import InputBox from '../../components/InputBox'
-import InputPhone from '../../components/inputPhone'
+import InputPhone from '../../components/InputPhone'
 import InputPhoto from '../../components/InputPhoto'
 
 const SignPersonalDetails = () => {
