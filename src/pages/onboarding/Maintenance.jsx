@@ -3,7 +3,7 @@ import Header from '../../components/Header'
 
 const Maintenance = () => {
     return (
-        <section className='min-h-[90vh] w-full relative py-12'>
+        <section className='min-h-[90vh] w-full relative  '>
             <Header />
             <div className='w-full max-w-[1400px] mx-auto flex items-center justify-center h-full px-4 flex-col gap-4 lg:flex-row'>
                 <div className='flex flex-col gap-3  w-full md:w-[585px]'>
