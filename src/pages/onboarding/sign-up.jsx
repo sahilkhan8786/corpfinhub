@@ -1,7 +1,7 @@
 import React from 'react'
 import { signUpList, signUpOptionsList } from '../../constant'
 import InputBox from '../../components/InputBox'
-import InputPhone from '../../components/inputPhone'
+import InputPhone from '../../components/InputPhone'
 
 const SignUp = () => {
     return (
