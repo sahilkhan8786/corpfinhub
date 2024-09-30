@@ -10,6 +10,18 @@ import Maintenance from "./pages/onboarding/Maintenance";
 import Page404 from "./pages/onboarding/page404";
 import Desktop1 from "./pages/onboarding/desktop-1";
 import Home from "./pages/Home";
+import SellerListingDetailsPage from "./pages/midmarket_Seller/SellerListingDetailsPage";
+import MidMarketLandingPage from "./pages/landing_pages/MidMarketLandingPage";
+import MasterLandingPageEarlyStage from "./pages/landing_pages/MasterLandingPageEarlyStage";
+import DashboardSeller from "./pages/midmarket_Seller/DashboardSeller";
+import BuyersEvaluation from "./pages/midmarket_Seller/BuyersEvaluation";
+import StartupSellerLisitngDetailsPage from "./pages/startup_seller/StartupSellerLisitngDetailsPage";
+import MyListingStartupSeller from "./pages/startup_seller/MyListingStartupSeller";
+import EvaluateBuyerStartupSeller from "./pages/startup_seller/EvaluateBuyerStartupSeller";
+import EvaluateBuyerStartupSellerResponse from "./pages/startup_seller/EvaluateBuyerStartupSellerResponse";
+import ResponsePopup from "./pages/startup_seller/ResponsePopup";
+import MidmarketSellerOverview from "./pages/midmarket_Seller/MidmarketSellerOverview";
+import StartSellerOverview from "./pages/startup_seller/StartupSellerOverview";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +68,54 @@ const router = createBrowserRouter([
   {
     path: '/desktop',
     element: <Desktop1 />
+  },
+  {
+    path: '/seller-listing-details',
+    element: <SellerListingDetailsPage />
+  },
+  {
+    path: '/dashboard-seller',
+    element: <DashboardSeller />
+  },
+  {
+    path: '/buyers-evaluation',
+    element: <BuyersEvaluation />
+  },
+  {
+    path: '/midmarker-seller-overview',
+    element: <MidmarketSellerOverview />
+  },
+  {
+    path: '/start-up-seller-listing-page',
+    element: <StartupSellerLisitngDetailsPage />
+  },
+  {
+    path: '/my-lisitng-start-up-seller',
+    element: <MyListingStartupSeller />
+  },
+  {
+    path: '/evaluate-buyer-start-up-seller',
+    element: <EvaluateBuyerStartupSeller />
+  },
+  {
+    path: '/evaluate-buyer-start-up-seller-response',
+    element: <EvaluateBuyerStartupSellerResponse />
+  },
+  {
+    path: '/start-up-seller-overview',
+    element: <StartSellerOverview />
+  },
+  {
+    path: '/response-popup',
+    element: <ResponsePopup />
+  },
+  {
+    path: '/midmarket-landing-page',
+    element: <MidMarketLandingPage />
+  },
+  {
+    path: '/master-landing-page-early-stage',
+    element: <MasterLandingPageEarlyStage />
   },
 ]);
 
