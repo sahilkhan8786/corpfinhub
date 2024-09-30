@@ -26,7 +26,7 @@ const SignPersonalDetails = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className='bg-white  flex-1 rounded-tl-3xl  md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-none flex justify-center items-center flex-col gap-8   w-full px-4 md:px-0 md:w-[393px] relative h-screen py-12 md:py-0 pb-24 md:pb-0'>
+                <div className='bg-white  flex-1 rounded-tl-3xl  md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-none flex justify-center items-center flex-col gap-3   w-full px-4 md:px-0 md:w-[393px] relative h-screen py-12 md:py-0 pb-24 md:pb-0'>
                     <div className='w-full md:w-[393px] flex items-center justify-between gap-2'>
                         <select name="role" id="role" className='border px-4 py-2 rounded-sm text-primary outline-none focus:outline-none'>
                             <option value="Title">Title</option>

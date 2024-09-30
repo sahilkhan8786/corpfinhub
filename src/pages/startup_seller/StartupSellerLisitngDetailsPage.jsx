@@ -13,7 +13,7 @@ const StartupSellerLisitngDetailsPage = () => {
                 </article>
 
                 <div>
-                    <article className='flex w-full mt-6 gap-3'>
+                    <article className='flex w-full mt-6 gap-3 flex-col md:flex-row flex-wrap'>
                         <div className='w-full flex-1'>
                             <InputBox
                                 label={'Business overview'}
@@ -40,7 +40,7 @@ const StartupSellerLisitngDetailsPage = () => {
                         </div>
                     </article>
                 </div>
-                <div className='flex w-full my-4 gap-3'>
+                <div className='flex w-full my-4 gap-3 flex-col md:flex-row'>
                     <article className='flex-1 w-full flex flex-col gap-3'>
                         <div className='flex gap-4 items-center '>
                             <InputSelect name={'Funding Stage'} id={'Funding Stage'} />
@@ -141,9 +141,9 @@ const StartupSellerLisitngDetailsPage = () => {
                 <div>
                     <textarea name="" id="" cols="30" rows="6" placeholder='Any other details ' className='border w-full p-4'></textarea>
                 </div>
-                <div className='flex justify-between  my-6'>
+                <div className='flex justify-between  my-6 flex-col md:flex-row'>
                     <article className='flex gap-4'>
-                        <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary'>
+                        <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary justify-center  '>
                             <img src="/upload.png" alt="" />
                             <span>Upload Pitchdeck</span>
                         </button>

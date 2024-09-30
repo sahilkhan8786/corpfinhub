@@ -30,7 +30,7 @@ const ForgotPassword = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className='bg-white  flex-1 rounded-tl-3xl  md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-none flex justify-center items-center flex-col gap-8   w-full px-4 md:px-0 md:w-[393px] relative h-screen py-12 md:py-0'>
+                <div className='bg-white  flex-1 rounded-tl-3xl  md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-none flex justify-center items-center flex-col gap-4   w-full px-4 md:px-0 md:w-[393px] relative h-screen py-12 md:py-0'>
                     <h3 className='w-full md:w-[393px] text-3xl font-medium'>Forgot password?</h3>
                     <p className='w-full md:w-[393px] text-[14px] text-[#47464A]'>No worriest! Just enter your email and we’ll send you a reset password link.</p>
                     <div className='  w-full md:w-[393px] '>

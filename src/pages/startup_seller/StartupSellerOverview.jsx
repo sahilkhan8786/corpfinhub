@@ -11,7 +11,7 @@ const StartSellerOverview = () => {
 
             <div className='flex gap-2 max-w-[1440px] mx-auto'>
                 {/* LEFT */}
-                <article className='flex-2 border-r  pr-12 mt-4'>
+                <article className='flex-2 border-r  pr-12 mt-4 hidden xl:block'>
                     <h1 className='text-primary font-semibold text-[16px] cursor-pointer my-4'>Business Side Dashboard</h1>
                     <ul className='flex flex-col gap-4'>
                         <li className='cursor-pointer flex gap-3'>
@@ -47,9 +47,12 @@ const StartSellerOverview = () => {
                     </div>
                     <div>
 
-                        <div className='flex flex-1 gap-4 my-6'>
-                            <img src="/Group 65.png" alt="" />
-                            <div className='flex w-full flex-col flex-1'>
+                        <div className='flex flex-1 gap-4 my-6 flex-col md:flex-row' >
+                            <div className='flex items-center w-full justify-center md:flex-1'>
+
+                                <img src="/Group 65.png" alt="" className=' w-fit ' />
+                            </div>
+                            <div className='flex w-full flex-col flex-1 gap-4'>
                                 <div className='w-full flex-1'>
                                     <InputBox
                                         name={'first name'}
@@ -69,7 +72,7 @@ const StartSellerOverview = () => {
                                     />
                                 </div>
                             </div>
-                            <div className='flex w-full flex-col flex-1'>
+                            <div className='flex w-full flex-col flex-1 gap-4'>
                                 <div className='w-full flex-1'>
                                     <InputBox
                                         name={'Last name'}
@@ -100,7 +103,7 @@ const StartSellerOverview = () => {
                         </article>
 
                         <div>
-                            <article className='flex w-full mt-6 gap-3'>
+                            <article className='flex w-full mt-6 gap-3 flex-col md:flex-row flex-wrap'>
                                 <div className='w-full flex-1'>
                                     <InputBox
                                         label={'Transaction overview'}
@@ -121,7 +124,7 @@ const StartSellerOverview = () => {
                                 </div>
                             </article>
                         </div>
-                        <div className='flex w-full my-4 gap-3'>
+                        <div className='flex w-full my-4 gap-3 flex-col md:flex-row'>
                             <article className='flex-1 w-full flex flex-col gap-3'>
                                 <div className='flex gap-4 items-center '>
                                     <InputSelect name={'Transaction type'} id={'Transaction type'} />
@@ -150,8 +153,8 @@ const StartSellerOverview = () => {
                                     <div className='flex-1 w-full'>
 
                                         <InputBox
-                                            label={'Revenue Growth'}
-                                            name={'Revenue Growth '} />
+                                            label={'Revenue Growth {£m}'}
+                                            name={'Revenue Growth {£m} '} />
                                     </div>
                                     <img src="/info.png" alt="" />
                                 </div>
@@ -159,8 +162,8 @@ const StartSellerOverview = () => {
                                     <div className='flex-1 w-full'>
 
                                         <InputBox
-                                            label={'Enterprise Value'}
-                                            name={'Enterprise Value '} />
+                                            label={'Enterprise Value {£m}'}
+                                            name={'Enterprise Value {£m}'} />
                                     </div>
                                     <img src="/info.png" alt="" />
                                 </div>
@@ -184,8 +187,8 @@ const StartSellerOverview = () => {
                                     <div className='flex-1 w-full'>
 
                                         <InputBox
-                                            label={'EBITDA'}
-                                            name={'EBITDA '} />
+                                            label={'EBITDA {£m}'}
+                                            name={'EBITDA {£m}'} />
                                     </div>
                                     <img src="/info.png" alt="" />
                                 </div>
@@ -193,8 +196,8 @@ const StartSellerOverview = () => {
                                     <div className='flex-1 w-full'>
 
                                         <InputBox
-                                            label={'EBIDTA Margin'}
-                                            name={'EBIDTA Margin '} />
+                                            label={'EBITDA Margin{£m}'}
+                                            name={'EBITDA Margin{£m} '} />
                                     </div>
                                     <img src="/info.png" alt="" />
                                 </div>
@@ -204,18 +207,18 @@ const StartSellerOverview = () => {
                         <div>
                             <textarea name="" id="" cols="30" rows="6" placeholder='Any other details ' className='border w-full p-4'></textarea>
                         </div>
-                        <div className='flex justify-between  my-6'>
-                            <article className='flex gap-4'>
-                                <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary'>
+                        <div className='flex justify-between  my-6 flex-col md:flex-row'>
+                            <article className='flex gap-4 flex-col md:flex-row'>
+                                <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary justify-center  '>
                                     <img src="/upload.png" alt="" />
                                     <span>Upload Teaser</span>
                                 </button>
-                                <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85'>
+                                <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85 justify-center'>
                                     <img src="/file-plus.png" alt="" />
                                     <span>Upload NDA</span>
                                 </button>
                             </article>
-                            <article>
+                            <article className=''>
                                 <p className='font-medium text-[#202020] text-[16px]'>Need help?</p>
                                 <span className='text-primary text-[12px] underline cursor-pointer'>Talk to our advisors </span>
                             </article>

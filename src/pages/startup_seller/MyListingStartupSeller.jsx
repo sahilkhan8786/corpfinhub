@@ -19,7 +19,7 @@ const MyListingStartupSeller = () => {
                     <article className='flex w-full flex-col gap-4 my-2 border  p-3 shadow-lg'>
                         {/* top */}
                         <div className='flex justify-between w-full'>
-                            <article className='flex justify-between gap-2'>
+                            <article className='flex justify-between gap-2 flex-col  md:flex-row md:gap-0'>
                                 <span>Transaction Headlines:</span>
                                 <h1 className=' font-medium text-[16px] text-primary flex items-center gap-2'>
                                     <img src="/Location.png" alt="" />
@@ -33,7 +33,7 @@ const MyListingStartupSeller = () => {
                             </article>
                         </div>
                         {/* bottom */}
-                        <div className='flex justify-between w-full'>
+                        <div className='flex justify-between w-full gap-4 flex-col md:flex-row'>
                             <img src="/Group 45.png" alt="" />
                             <article className='flex flex-col justify-between relative overflow-hidden'>
                                 <div className='absolute right-0 -bottom-16 bg-[#8DF5E780] w-[50px] h-[96px] rounded-full flex justify-center '>
@@ -41,7 +41,7 @@ const MyListingStartupSeller = () => {
                                 </div>
 
                                 <span className='text-[12px] text-[#000000B2]'>Welcome to www.lorem-ipsum.info. This site is provided as a service to our visitors and may be used for informational purposes only.</span>
-                                <div className='flex justify-between '>
+                                <div className='flex justify-between flex-wrap gap-3 lg:flex-nowrap lg:gap-0 '>
 
 
                                     <aside className='flex-1'>
@@ -65,7 +65,7 @@ const MyListingStartupSeller = () => {
                                         <p className='text-primary text-[12px] font-medium'>76.2</p>
                                     </aside>
                                 </div>
-                                <div className='flex justify-between'>
+                                <div className='flex justify-between flex-wrap gap-3 lg:flex-nowrap lg:gap-0'>
                                     <aside className='flex-1'>
                                         <h1 className='font-medium text-[14px]'>Gross margin  </h1>
                                         <p className='text-primary text-[12px] font-medium'>Sale</p>
@@ -89,13 +89,13 @@ const MyListingStartupSeller = () => {
                                 </div>
                             </article>
 
-                            <article className='flex flex-col justify-between'>
-                                <div className='flex gap-3'>
-                                    <button className='bg-primary p-3 text-white flex items-center gap-2'>
+                            <article className='flex flex-col justify-between gap-4'>
+                                <div className='flex gap-3 flex-col sm:flex-row md:flex-col lg:flex-row'>
+                                    <button className='bg-primary p-3 text-white flex items-center gap-2 md:flex-1 min-w-fit'>
                                         <img src="/square-pen.png" alt="" />
                                         <span>Edit</span>
                                     </button>
-                                    <select className='text-[12px] font-medium border border-primary '>
+                                    <select className='text-[12px] font-medium border border-primary p-3'>
                                         <option value="Change Business Status">Change Business Status</option>
                                     </select>
                                 </div>
@@ -109,7 +109,7 @@ const MyListingStartupSeller = () => {
                     <article className='flex w-full flex-col gap-4 my-2 border  p-3 shadow-lg'>
                         {/* top */}
                         <div className='flex justify-between w-full'>
-                            <article className='flex justify-between gap-2'>
+                            <article className='flex justify-between gap-2 flex-col  md:flex-row md:gap-0'>
                                 <span>Transaction Headlines:</span>
                                 <h1 className=' font-medium text-[16px] text-primary flex items-center gap-2'>
                                     <img src="/Location.png" alt="" />
@@ -123,7 +123,7 @@ const MyListingStartupSeller = () => {
                             </article>
                         </div>
                         {/* bottom */}
-                        <div className='flex justify-between w-full'>
+                        <div className='flex justify-between w-full gap-4 flex-col md:flex-row'>
                             <img src="/Group 45.png" alt="" />
                             <article className='flex flex-col justify-between relative overflow-hidden'>
                                 <div className='absolute right-0 -bottom-16 bg-[#8DF5E780] w-[50px] h-[96px] rounded-full flex justify-center '>
@@ -131,7 +131,7 @@ const MyListingStartupSeller = () => {
                                 </div>
 
                                 <span className='text-[12px] text-[#000000B2]'>Welcome to www.lorem-ipsum.info. This site is provided as a service to our visitors and may be used for informational purposes only.</span>
-                                <div className='flex justify-between '>
+                                <div className='flex justify-between flex-wrap gap-3 lg:flex-nowrap lg:gap-0 '>
 
 
                                     <aside className='flex-1'>
@@ -155,7 +155,7 @@ const MyListingStartupSeller = () => {
                                         <p className='text-primary text-[12px] font-medium'>76.2</p>
                                     </aside>
                                 </div>
-                                <div className='flex justify-between'>
+                                <div className='flex justify-between flex-wrap gap-3 lg:flex-nowrap lg:gap-0'>
                                     <aside className='flex-1'>
                                         <h1 className='font-medium text-[14px]'>Gross margin  </h1>
                                         <p className='text-primary text-[12px] font-medium'>Sale</p>
@@ -179,13 +179,13 @@ const MyListingStartupSeller = () => {
                                 </div>
                             </article>
 
-                            <article className='flex flex-col justify-between'>
-                                <div className='flex gap-3'>
-                                    <button className='bg-primary p-3 text-white flex items-center gap-2'>
+                            <article className='flex flex-col justify-between gap-4'>
+                                <div className='flex gap-3 flex-col sm:flex-row md:flex-col lg:flex-row'>
+                                    <button className='bg-primary p-3 text-white flex items-center gap-2 md:flex-1 min-w-fit'>
                                         <img src="/square-pen.png" alt="" />
                                         <span>Edit</span>
                                     </button>
-                                    <select className='text-[12px] font-medium border border-primary '>
+                                    <select className='text-[12px] font-medium border border-primary p-3'>
                                         <option value="Change Business Status">Change Business Status</option>
                                     </select>
                                 </div>
@@ -199,7 +199,7 @@ const MyListingStartupSeller = () => {
                     <article className='flex w-full flex-col gap-4 my-2 border  p-3 shadow-lg'>
                         {/* top */}
                         <div className='flex justify-between w-full'>
-                            <article className='flex justify-between gap-2'>
+                            <article className='flex justify-between gap-2 flex-col  md:flex-row md:gap-0'>
                                 <span>Transaction Headlines:</span>
                                 <h1 className=' font-medium text-[16px] text-primary flex items-center gap-2'>
                                     <img src="/Location.png" alt="" />
@@ -213,7 +213,7 @@ const MyListingStartupSeller = () => {
                             </article>
                         </div>
                         {/* bottom */}
-                        <div className='flex justify-between w-full'>
+                        <div className='flex justify-between w-full gap-4 flex-col md:flex-row'>
                             <img src="/Group 45.png" alt="" />
                             <article className='flex flex-col justify-between relative overflow-hidden'>
                                 <div className='absolute right-0 -bottom-16 bg-[#8DF5E780] w-[50px] h-[96px] rounded-full flex justify-center '>
@@ -221,7 +221,7 @@ const MyListingStartupSeller = () => {
                                 </div>
 
                                 <span className='text-[12px] text-[#000000B2]'>Welcome to www.lorem-ipsum.info. This site is provided as a service to our visitors and may be used for informational purposes only.</span>
-                                <div className='flex justify-between '>
+                                <div className='flex justify-between flex-wrap gap-3 lg:flex-nowrap lg:gap-0 '>
 
 
                                     <aside className='flex-1'>
@@ -245,7 +245,7 @@ const MyListingStartupSeller = () => {
                                         <p className='text-primary text-[12px] font-medium'>76.2</p>
                                     </aside>
                                 </div>
-                                <div className='flex justify-between'>
+                                <div className='flex justify-between flex-wrap gap-3 lg:flex-nowrap lg:gap-0'>
                                     <aside className='flex-1'>
                                         <h1 className='font-medium text-[14px]'>Gross margin  </h1>
                                         <p className='text-primary text-[12px] font-medium'>Sale</p>
@@ -269,13 +269,13 @@ const MyListingStartupSeller = () => {
                                 </div>
                             </article>
 
-                            <article className='flex flex-col justify-between'>
-                                <div className='flex gap-3'>
-                                    <button className='bg-primary p-3 text-white flex items-center gap-2'>
+                            <article className='flex flex-col justify-between gap-4'>
+                                <div className='flex gap-3 flex-col sm:flex-row md:flex-col lg:flex-row'>
+                                    <button className='bg-primary p-3 text-white flex items-center gap-2 md:flex-1 min-w-fit'>
                                         <img src="/square-pen.png" alt="" />
                                         <span>Edit</span>
                                     </button>
-                                    <select className='text-[12px] font-medium border border-primary '>
+                                    <select className='text-[12px] font-medium border border-primary p-3'>
                                         <option value="Change Business Status">Change Business Status</option>
                                     </select>
                                 </div>
@@ -286,6 +286,7 @@ const MyListingStartupSeller = () => {
                         </div>
 
                     </article>
+
 
                     {/* <article className='w-full'>
                         <img src="/Group 45.png" alt="" />

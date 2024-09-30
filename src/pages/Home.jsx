@@ -39,6 +39,9 @@ const Home = () => {
             <Link to={'/seller-listing-details'}>
                 Seller Listing Details Page
             </Link>
+            <Link to={'/master-landing-page-early-stage'}>
+                Master Landing Page Early Stage
+            </Link>
             <Link to={'/midmarket-landing-page'}>
                 Mid market Landing Page
             </Link>
@@ -69,9 +72,7 @@ const Home = () => {
             <Link to={'/response-popup'}>
                 Response Popup
             </Link>
-            <Link to={'/master-landing-page-early-stage'}>
-                Master Landing Page Early Stage
-            </Link>
+
         </div>
     )
 }

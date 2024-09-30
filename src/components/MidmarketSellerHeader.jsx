@@ -7,7 +7,7 @@ const MidmarketSellerHeader = () => {
                 <div >
                     <img src="/logoDark.png" alt="" />
                 </div>
-                <ul className='flex items-center gap-8'>
+                <ul className='md:flex items-center gap-8 hidden px-2'>
                     <li className='font-medium text-[14px] hover:text-primary cursor-pointer'>
                         About Us
                     </li>
@@ -25,6 +25,7 @@ const MidmarketSellerHeader = () => {
                         <img src="/image 4.png" alt="" className='rounded-full' />
                     </li>
                 </ul>
+                <img src="/menu.png" alt="" className='pr-4 cursor-pointer block md:hidden' />
 
             </nav>
         </header>

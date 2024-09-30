@@ -13,7 +13,7 @@ const EvaluateBuyerStartupSellerResponse = () => {
             </div>
 
             <div className='max-w-[1440px] mx-auto px-4 w-full '>
-                <div className='w-full flex items-center justify-between px-4 py-3 my-4'>
+                <div className='w-full flex items-center justify-between px-4 py-3 my-4 flex-col gap-3 sm:flex-row'>
 
                     <h1 className='text-primary font-semibold text-[16px]'>Investors</h1>
                     <ul className='flex items-center gap-3'>
@@ -24,9 +24,9 @@ const EvaluateBuyerStartupSellerResponse = () => {
                 </div>
                 <div className='flex flex-col gap-3 w-full ' >
 
-                    <article className='flex w-full flex-col gap-4  border   shadow-lg items-center'>
+                    <article className='flex w-full flex-col gap-4  border   shadow-lg items-center my-4 p-4' >
 
-                        <div className='flex justify-between w-full items-center gap-4'>
+                        <div className='flex justify-between w-full items-center gap-4 flex-col xl:flex-row '>
                             <img src="/Rectangle 509.png" alt="" className='h-fit  object-cover' />
 
                             <div className='flex-1 flex flex-col justify-center px-4 gap-1 '>
@@ -35,10 +35,10 @@ const EvaluateBuyerStartupSellerResponse = () => {
                                 <p className='font-medium text-[14px] text-primary whitespace-nowrap'>Hyderabad, India</p>
                                 <p className='font-medium text-[14px] text-primary whitespace-nowrap'>Chief Executive Officer</p>
                             </div>
-                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center'>
+                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center hidden xl:block'>
 
                             </div>
-                            <article className='flex flex-col gap-6  flex-[3] justify-center'>
+                            <article className='flex flex-col gap-2 md:gap-4 md:pr-12  px-4 items-start flex-1 justify-start  w-full'>
                                 <h1 className='font-semibold text-[16px]'>Industry Preference : </h1>
 
                                 <div className='flex gap-4 w-full flex-wrap'>
@@ -52,11 +52,11 @@ const EvaluateBuyerStartupSellerResponse = () => {
                                 </div>
 
                             </article>
-                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center'>
+                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center hidden xl:block'>
 
                             </div>
-                            <article className='flex flex-col gap-6  flex-[3] justify-center'>
-                                <h1 className='font-semibold text-[16px]'>Funding stage Preference : </h1>
+                            <article className='flex flex-col gap-2 md:gap-4 md:pr-12  px-4 items-start flex-1 justify-start  w-full'>
+                                <h1 className='font-semibold text-[16px] whitespace-nowrap'>Funding stage Preference : </h1>
 
                                 <div className='flex gap-4 w-full flex-wrap'>
 
@@ -68,11 +68,10 @@ const EvaluateBuyerStartupSellerResponse = () => {
                                 </div>
 
                             </article>
-                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center'>
-
+                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center hidden xl:block'>
                             </div>
 
-                            <article className='flex flex-col gap-4 pr-12  px-4 items-start flex-1 justify-center'>
+                            <article className='flex flex-col gap-2 md:gap-4 md:pr-12  px-4 items-start flex-1 justify-start  w-full'>
                                 <h1 className='text-primary font-medium text-[16px ]   text-left'>Download NDA</h1>
                                 <p className='text-[#707070] text-[12px]  text-left'  >Any Concerns?</p>
                                 <button className='bg-primary px-2 py-2 hover:opacity-85 text-white flex items-center gap-2'>
@@ -85,9 +84,9 @@ const EvaluateBuyerStartupSellerResponse = () => {
                         </div>
 
                     </article>
-                    <article className='flex w-full flex-col gap-4  border   shadow-lg items-center'>
+                    <article className='flex w-full flex-col gap-4  border   shadow-lg items-center my-4 p-4' >
 
-                        <div className='flex justify-between w-full items-center gap-4'>
+                        <div className='flex justify-between w-full items-center gap-4 flex-col xl:flex-row '>
                             <img src="/Rectangle 509.png" alt="" className='h-fit  object-cover' />
 
                             <div className='flex-1 flex flex-col justify-center px-4 gap-1 '>
@@ -96,10 +95,10 @@ const EvaluateBuyerStartupSellerResponse = () => {
                                 <p className='font-medium text-[14px] text-primary whitespace-nowrap'>Hyderabad, India</p>
                                 <p className='font-medium text-[14px] text-primary whitespace-nowrap'>Chief Executive Officer</p>
                             </div>
-                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center'>
+                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center hidden xl:block'>
 
                             </div>
-                            <article className='flex flex-col gap-6  flex-[3] justify-center'>
+                            <article className='flex flex-col gap-2 md:gap-4 md:pr-12  px-4 items-start flex-1 justify-start  w-full'>
                                 <h1 className='font-semibold text-[16px]'>Industry Preference : </h1>
 
                                 <div className='flex gap-4 w-full flex-wrap'>
@@ -113,11 +112,11 @@ const EvaluateBuyerStartupSellerResponse = () => {
                                 </div>
 
                             </article>
-                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center'>
+                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center hidden xl:block'>
 
                             </div>
-                            <article className='flex flex-col gap-6  flex-[3] justify-center'>
-                                <h1 className='font-semibold text-[16px]'>Funding stage Preference : </h1>
+                            <article className='flex flex-col gap-2 md:gap-4 md:pr-12  px-4 items-start flex-1 justify-start  w-full'>
+                                <h1 className='font-semibold text-[16px] whitespace-nowrap'>Funding stage Preference : </h1>
 
                                 <div className='flex gap-4 w-full flex-wrap'>
 
@@ -129,29 +128,25 @@ const EvaluateBuyerStartupSellerResponse = () => {
                                 </div>
 
                             </article>
-                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center'>
-
+                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center hidden xl:block'>
                             </div>
 
-                            <article className='flex flex-col gap-4 pr-12  px-4 items-start flex-1 justify-center'>
+                            <article className='flex flex-col gap-2 md:gap-4 md:pr-12  px-4 items-start flex-1 justify-start  w-full'>
                                 <h1 className='text-primary font-medium text-[16px ]   text-left'>Download NDA</h1>
                                 <p className='text-[#707070] text-[12px]  text-left'  >Any Concerns?</p>
-                                <button className='bg-primary px-3 py-2 hover:opacity-85 text-white flex items-center gap-2'>
+                                <button className='bg-primary px-2 py-2 hover:opacity-85 text-white flex items-center gap-2'>
                                     <img src="/upload-white.png" alt="" />
                                     <span>Download</span>
                                 </button>
-                                <div className='flex gap-3 items-center'>
-                                    <button className='border border-primary hover:opacity-85 px-2 py-1 bg-primary text-white'>Accept</button>
-                                    <button className='border border-primary hover:opacity-85 px-2 py-1 bg-white text-primary'>Reject</button>
-                                </div>
+                                <span className='font-medium text-[12px] text-[#FFAB2A] whitespace-nowrap'>Status Sent to Buyer</span>
 
                             </article>
                         </div>
 
                     </article>
-                    <article className='flex w-full flex-col gap-4  border   shadow-lg items-center'>
+                    <article className='flex w-full flex-col gap-4  border   shadow-lg items-center my-4 p-4' >
 
-                        <div className='flex justify-between w-full items-center gap-4'>
+                        <div className='flex justify-between w-full items-center gap-4 flex-col xl:flex-row '>
                             <img src="/Rectangle 509.png" alt="" className='h-fit  object-cover' />
 
                             <div className='flex-1 flex flex-col justify-center px-4 gap-1 '>
@@ -160,10 +155,10 @@ const EvaluateBuyerStartupSellerResponse = () => {
                                 <p className='font-medium text-[14px] text-primary whitespace-nowrap'>Hyderabad, India</p>
                                 <p className='font-medium text-[14px] text-primary whitespace-nowrap'>Chief Executive Officer</p>
                             </div>
-                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center'>
+                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center hidden xl:block'>
 
                             </div>
-                            <article className='flex flex-col gap-6  flex-[3] justify-center'>
+                            <article className='flex flex-col gap-2 md:gap-4 md:pr-12  px-4 items-start flex-1 justify-start  w-full'>
                                 <h1 className='font-semibold text-[16px]'>Industry Preference : </h1>
 
                                 <div className='flex gap-4 w-full flex-wrap'>
@@ -176,12 +171,12 @@ const EvaluateBuyerStartupSellerResponse = () => {
 
                                 </div>
 
-                            </article>Response
-                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center'>
+                            </article>
+                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center hidden xl:block'>
 
                             </div>
-                            <article className='flex flex-col gap-6  flex-[3] justify-center'>
-                                <h1 className='font-semibold text-[16px]'>Funding stage Preference : </h1>
+                            <article className='flex flex-col gap-2 md:gap-4 md:pr-12  px-4 items-start flex-1 justify-start  w-full'>
+                                <h1 className='font-semibold text-[16px] whitespace-nowrap'>Funding stage Preference : </h1>
 
                                 <div className='flex gap-4 w-full flex-wrap'>
 
@@ -193,26 +188,23 @@ const EvaluateBuyerStartupSellerResponse = () => {
                                 </div>
 
                             </article>
-                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center'>
-
+                            <div className='w-[1px] h-[120px] bg-[#D8D8D8]  items-center justify-center hidden xl:block'>
                             </div>
 
-                            <article className='flex flex-col gap-4 pr-12  px-4 items-start flex-1 justify-center'>
+                            <article className='flex flex-col gap-2 md:gap-4 md:pr-12  px-4 items-start flex-1 justify-start  w-full'>
                                 <h1 className='text-primary font-medium text-[16px ]   text-left'>Download NDA</h1>
                                 <p className='text-[#707070] text-[12px]  text-left'  >Any Concerns?</p>
-                                <button className='bg-primary px-3 py-2 hover:opacity-85 text-white flex items-center gap-2'>
+                                <button className='bg-primary px-2 py-2 hover:opacity-85 text-white flex items-center gap-2'>
                                     <img src="/upload-white.png" alt="" />
                                     <span>Download</span>
                                 </button>
-                                <div className='flex gap-3 items-center'>
-                                    <button className='border border-primary hover:opacity-85 px-2 py-1 bg-primary text-white'>Accept</button>
-                                    <button className='border border-primary hover:opacity-85 px-2 py-1 bg-white text-primary'>Reject</button>
-                                </div>
+                                <span className='font-medium text-[12px] text-[#FFAB2A] whitespace-nowrap'>Status Sent to Buyer</span>
 
                             </article>
                         </div>
 
                     </article>
+
 
 
 
