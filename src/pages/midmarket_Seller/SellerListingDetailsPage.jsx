@@ -1,10 +1,12 @@
 import React from 'react'
 import InputBox from '../../components/InputBox'
 import InputSelect from '../../components/InputSelect'
+import MidmarketSellerHeader from '../../components/MidmarketSellerHeader'
 
 const SellerListingDetailsPage = () => {
     return (
         <section className='bg-[#fefefe] my-6'>
+            <MidmarketSellerHeader />
             <div className='max-w-[1440px] mx-auto bg-white shadow-lg p-4'>
 
                 <article className=''>
@@ -12,7 +14,7 @@ const SellerListingDetailsPage = () => {
                     <p className='text-[14px]'>Please enter the mandatory fields</p>
                 </article>
 
-                <div>
+                <div className='relative'>
                     <article className='flex w-full mt-6 gap-3 flex-col md:flex-row flex-wrap'>
                         <div className='w-full flex-1'>
                             <InputBox
@@ -117,30 +119,34 @@ const SellerListingDetailsPage = () => {
                 <div>
                     <textarea name="" id="" cols="30" rows="6" placeholder='Any other details ' className='border w-full p-4'></textarea>
                 </div>
-                <div className='flex justify-between  my-6 flex-col md:flex-row'>
-                    <article className='flex gap-4 flex-col md:flex-row'>
-                        <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary justify-center  '>
+                <div className='flex justify-between  my-6 flex-col md:flex-row '>
+                    <article className='flex gap-4 w-full'>
+                        <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary justify-center   w-full md:w-fit'>
                             <img src="/upload.png" alt="" />
                             <span>Upload Teaser</span>
                         </button>
-                        <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85 justify-center'>
+                        <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85 justify-center w-full md:w-fit'>
                             <img src="/file-plus.png" alt="" />
                             <span>Upload NDA</span>
                         </button>
                     </article>
-                    <article className=''>
+                    <article className='hidden md:block '>
                         <p className='font-medium text-[#202020] text-[16px]'>Need help?</p>
-                        <span className='text-primary text-[12px] underline cursor-pointer'>Talk to our advisors </span>
+                        <span className='text-primary text-[12px] underline cursor-pointer whitespace-nowrap'>Talk to our advisors </span>
                     </article>
                 </div>
-                <div className='flex items-center justify-center w-full gap-4'>
-                    <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary'>
+                <div className='flex items-center justify-center w-2/3 md:w-full mx-auto  gap-4'>
+                    <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary w-full  justify-center md:w-fit'>
                         Cancel
                     </button>
-                    <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85'>
+                    <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85 w-full   justify-center md:w-fit'>
                         Create Listing
                     </button>
                 </div>
+                <article className='block md:hidden text-center my-10 '>
+                    <p className='font-medium text-[#202020] text-[16px]'>Need help?</p>
+                    <span className='text-primary text-[12px] underline cursor-pointer whitespace-nowrap'>Talk to our advisors </span>
+                </article>
             </div>
 
         </section>

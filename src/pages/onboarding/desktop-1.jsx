@@ -5,7 +5,7 @@ const Desktop1 = () => {
     return (
         <section>
             <Header />
-            <div className='flex gap-2 max-w-[1440px] mx-auto flex-col w-full md:flex-row'>
+            <div className='flex gap-2 max-w-[1440px] mx-auto flex-col w-full md:flex-row p-3 md:p-0'>
                 <aside className='w-full md:w-1/4 px-2'>
                     <h1 className='font-semibold text-[14px] text-[#A8A8A8] tracking-widest my-4'>TABLE OF CONTENT</h1>
                     <ul>

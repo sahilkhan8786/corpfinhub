@@ -1,10 +1,12 @@
 import React from 'react'
 import InputBox from '../../components/InputBox'
 import InputSelect from '../../components/InputSelect'
+import MidmarketSellerHeader from '../../components/MidmarketSellerHeader'
 
 const StartupSellerLisitngDetailsPage = () => {
     return (
         <section className='bg-[#fefefe] my-6'>
+            <MidmarketSellerHeader />
             <div className='max-w-[1440px] mx-auto bg-white shadow-lg p-4'>
 
                 <article className=''>
@@ -141,31 +143,38 @@ const StartupSellerLisitngDetailsPage = () => {
                 <div>
                     <textarea name="" id="" cols="30" rows="6" placeholder='Any other details ' className='border w-full p-4'></textarea>
                 </div>
-                <div className='flex justify-between  my-6 flex-col md:flex-row'>
-                    <article className='flex gap-4'>
-                        <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary justify-center  '>
+                <article className='block md:hidden text-center my-10 '>
+                    <p className='font-medium text-[#202020] text-[16px]'>Need help?</p>
+                    <span className='text-primary text-[12px] underline cursor-pointer whitespace-nowrap'>Talk to our advisors </span>
+                </article>
+                <div className='flex justify-between  my-6 flex-col md:flex-row '>
+                    <article className='flex gap-4 w-full'>
+                        <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary justify-center   w-full md:w-fit'>
                             <img src="/upload.png" alt="" />
-                            <span>Upload Pitchdeck</span>
+                            <span>Upload Teaser</span>
                         </button>
-                        <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85'>
+                        <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85 justify-center w-full md:w-fit'>
                             <img src="/file-plus.png" alt="" />
                             <span>Upload NDA</span>
                         </button>
                     </article>
-                    <article>
+                    <article className='hidden md:block '>
                         <p className='font-medium text-[#202020] text-[16px]'>Need help?</p>
-                        <span className='text-primary text-[12px] underline cursor-pointer'>Talk to our advisors </span>
+                        <span className='text-primary text-[12px] underline cursor-pointer whitespace-nowrap'>Talk to our advisors </span>
                     </article>
                 </div>
-                <div className='flex items-center justify-center w-full gap-4'>
-                    <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary'>
+
+                <div className='flex items-center justify-center w-2/3 md:w-full mx-auto  gap-4'>
+                    <button className='border-2 border-primary flex gap-2 items-center p-3 hover:opacity-85 text-primary w-full  justify-center md:w-fit'>
                         Cancel
                     </button>
-                    <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85'>
+                    <button className='border-2 border-primary flex gap-2 items-center bg-primary text-white p-3 hover:opacity-85 w-full   justify-center md:w-fit whitespace-nowrap'>
                         Create Listing
                     </button>
                 </div>
+
             </div>
+
 
         </section>
     )

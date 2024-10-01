@@ -12,9 +12,9 @@ const InputBox = ({ label, name }) => {
             />
             <label
                 htmlFor={name}
-                className='absolute left-3 top-3 text-gray-500 transition-all duration-300 bg-white  peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                className='absolute left-3 top-3 text-gray-500 transition-all duration-300  bg-white  peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                 peer-placeholder-shown:px-2
-                peer-focus:-top-3 peer-focus:text-sm peer-focus:text-[#84818A] cursor-pointer'
+                peer-focus:-top-3 peer-focus:text-sm peer-focus:text-[#84818A] cursor-pointer whitespace-nowrap'
             >
                 {label}
                 <span className='text-red-500'>*</span>

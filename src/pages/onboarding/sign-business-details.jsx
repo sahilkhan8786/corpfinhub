@@ -4,29 +4,29 @@ import InputSelect from '../../components/InputSelect'
 
 const SignBusinessDetails = () => {
     return (
-        <section className='bg-primary w-full min-h-screen flex flex-col '>
+        <section className='bg-white md:bg-primary w-full min-h-screen flex flex-col p-2 md:p-0'>
             <div className=' flex w-full flex-col   md:flex-row'>
                 {/* LEFT */}
-                <div className='text-white flex-1 flex items-center justify-center flex-col md:relative mt-8 md:mt-0 px-3 md:px-0'>
+                <div className='md:text-white flex-1 flex items-center justify-center flex-col md:relative mt-8 md:mt-0 px-3 md:px-0'>
                     <h1 className='font-semibold text-4xl md:text-[48px] leading-tight w-full md:w-[360px]'>Step Away
                         to list with Us.</h1>
-                    <p className='text-[14px] w-full my-12 md:w-[360px]'>Please provide all the details correctly
+                    <p className='text-[14px] w-full my-3 md:my-12 md:w-[360px]'>Please provide all the details correctly
                         to get more responses from the buyers..</p>
 
 
-                    <p className='md:absolute md:bottom-12 my-6 md:my-0'>Having troubles?
+                    <p className='md:absolute md:bottom-12 my-6 md:my-0 hidden md:block'>Having troubles?
                         <span className='underline px-1 cursor-pointer'>Get Help</span>
 
                     </p>
 
-                    <div className='flex gap-2 items-center mt-16 mb-4 md:mb-0'>
+                    <div className='flex gap-2 items-center mt-4 md:mt-16 mb-4 md:mb-0'>
                         <img src="/business-icon.png" alt="" />
                         <p>3k+ people benefitted from CorpFin.</p>
                     </div>
                 </div>
 
                 {/* RIGHT */}
-                <div className='bg-white  flex-1 rounded-tl-3xl  md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-none flex justify-center items-center flex-col gap-3   w-full px-4 md:px-0 md:w-[393px] relative h-screen py-12 md:py-0 pb-24 md:pb-0'>
+                <div className='bg-white  flex-1 rounded-tl-3xl  md:rounded-bl-3xl rounded-tr-3xl md:rounded-tr-none flex justify-center items-center flex-col gap-3   w-full px-4 md:px-0 md:w-[393px] relative h-screen py-12 md:py-0 pb-24 md:pb-0 border border-primary  md:border-transparent rounded-b-3xl md:rounded-br-none'>
 
 
                     <div className='  w-full md:w-[393px] '>
@@ -54,8 +54,12 @@ const SignBusinessDetails = () => {
                     <div className='flex w-full md:w-[393px]'>
                         <button className='text-white bg-primary w-full p-3 hover:opacity-85'>Join CorpFin Hub</button>
                     </div>
-                    <p className='absolute bottom-12'>
+                    <p className='absolute bottom-12 hidden md:block'>
                         <span className='text-[#A8A8A8] text-[12px]'>Copyright © 2024 All Rights Reserved</span>
+
+                    </p>
+                    <p className='md:absolute md:bottom-12 my-6 md:my-0 block md:hidden'>Having troubles?
+                        <span className='underline px-1 cursor-pointer text-primary'>Get Help</span>
 
                     </p>
                 </div>
