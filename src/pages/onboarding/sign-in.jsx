@@ -43,7 +43,7 @@ const SignIn = () => {
                         text-[#47464A] w-fit whitespace-nowrap'>Forgot password ?</p>
                         <button className='text-white bg-primary w-full p-3 hover:opacity-85'>Sign In</button>
                     </div>
-                    <div className='w-full md:w-[393px] relative'>
+                    <div className='w-full md:w-[393px] relative my-3'>
                         <p className='w-full  bg-gray-300 h-[1px]'></p>
                         <span className='px-2 bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>or</span>
                     </div>
@@ -51,17 +51,26 @@ const SignIn = () => {
                     <div className='  w-full md:w-[393px] text-center'>
                         <h3 className='text-[#202020] font-medium text-[14px]' >Sign in with</h3>
                         <article className='  w-full md:w-[393px] flex items-center justify-between mt-6 flex-wrap mb-6 gap-2'>
-                            {
-                                signUpOptionsList.slice(0, 2).map(option => (
-                                    <div key={option.id} className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
-                                        <img src={option.icon} alt={option.label} />
-                                        <p >{option.label}</p>
-                                    </div>
-                                ))
-                            }
+                            <article className='  w-full md:w-[393px] flex items-center justify-between mt-6 flex-wrap mb-6 gap-2'>
+                                <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
+                                    <img src='/google logo.png' alt="" />
+                                    <p >Google</p>
+                                </div>
+                                <div className=' items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 hidden md:flex'>
+                                    <img src='/Windows.png' alt="" />
+                                    <p >Microsoft</p>
+                                </div>
+                                <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
+                                    <img src='/linkedIn.png' alt="" />
+                                    <p >LinkedIn</p>
+                                </div>
 
 
-                            <p className='sm:text-[14px] font-medium flex items-center justify-center w-full mt-6 flex-row whitespace-nowrap text-[10px]'>Don’t have a CorpFin Hub account?
+
+                            </article>
+
+
+                            <p className='sm:text-[14px] font-medium flex items-center justify-center w-full md:mt-6 flex-row whitespace-nowrap text-[10px]'>Don’t have a CorpFin Hub account?
                                 <span className='text-primary hover:cursor-pointer hover:underline'>Create an account</span>
                             </p>
                         </article>
@@ -71,7 +80,10 @@ const SignIn = () => {
 
                     </p>
                 </div>
+                <p className='md:absolute md:bottom-12 my-6 md:my-0 block  md:hidden text-center'>Having troubles?
+                    <span className='underline px-1 cursor-pointer text-primary'>Get Help</span>
 
+                </p>
             </div>
         </section>
     )

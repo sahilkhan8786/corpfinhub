@@ -53,25 +53,29 @@ const SignUp = () => {
                     <div className='  w-full md:w-[393px] text-center'>
                         <h3 className='text-[#202020] font-medium text-[14px]' >Sign up with</h3>
                         <article className='  w-full md:w-[393px] flex items-center justify-between mt-6 flex-wrap mb-6 gap-2'>
-                            {
-                                signUpOptionsList.slice(0, 2).map(option => (
-                                    <div key={option.id} className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
-                                        <img src={option.icon} alt={option.label} />
-                                        <p >{option.label}</p>
-                                    </div>
-                                ))
-                            }
+                            <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
+                                <img src='/google logo.png' alt="" />
+                                <p >Google</p>
+                            </div>
+                            <div className=' items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 hidden md:flex'>
+                                <img src='/Windows.png' alt="" />
+                                <p >Microsoft</p>
+                            </div>
+                            <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
+                                <img src='/linkedIn.png' alt="" />
+                                <p >LinkedIn</p>
+                            </div>
 
-                            <div className='flex gap-4 px-3 text-left font-normal text-[12px] text-[#84818A] mt-6'>
+                            <div className='flex gap-4 px-3 text-left font-normal text-[10px] text-[#84818A] mt-6 sm:text-[12px]'>
                                 <input type="checkbox" />
                                 <p>By clicking Create account, I agree that I have read and accepted the Terms of Use and Privacy Policy.</p>
                             </div>
-                            <p className='text-[14px] font-medium flex items-center justify-center w-full mt-6 flex-row md:flex-col sm:flex-row'>Already have a CorpFin Hub account?
+                            <p className='text-[10px] sm:text-[14px ] font-medium flex items-center justify-center w-full mt-6 flex-row md:flex-col sm:flex-row whitespace-nowrap'>Already have a CorpFin Hub account?
                                 <span className='text-primary hover:cursor-pointer hover:underline'>Sign In</span>
                             </p>
                         </article>
                     </div>
-                    <p className='absolute bottom-2 md:bottom-12'>
+                    <p className='absolute bottom-2 md:bottom-12 hidden md:block'>
                         <span className='text-[#A8A8A8] text-[12px]'>Copyright © 2024 All Rights Reserved</span>
 
                     </p>
