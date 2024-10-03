@@ -22,6 +22,15 @@ import EvaluateBuyerStartupSellerResponse from "./pages/startup_seller/EvaluateB
 import ResponsePopup from "./pages/startup_seller/ResponsePopup";
 import MidmarketSellerOverview from "./pages/midmarket_Seller/MidmarketSellerOverview";
 import StartSellerOverview from "./pages/startup_seller/StartupSellerOverview";
+import BuysideLandingPage from "./pages/landing_pages/BuysideLandingPage";
+import SellSideLandingPage from "./pages/landing_pages/SellSideLandingPage";
+import PricingPlans from "./pages/landing_pages/PricingPlans";
+import Contacts from "./pages/landing_pages/Contacts";
+import FAQ from "./pages/landing_pages/FAQ";
+import AboutUs from "./pages/landing_pages/AboutUs";
+import StartupLandingPageEarlyStage from "./pages/landing_pages/StartupLandingPageEarlyStage";
+import InvestorLandingPageEarlyStage from "./pages/landing_pages/InvestorLandingPageEarlyStage";
+import MasterLandingpage from "./pages/landing_pages/MasterLandingpage";
 
 const router = createBrowserRouter([
   {
@@ -104,6 +113,42 @@ const router = createBrowserRouter([
   {
     path: '/start-up-seller-overview',
     element: <StartSellerOverview />
+  },
+  {
+    path: '/buyside-landing-page',
+    element: <BuysideLandingPage />
+  },
+  {
+    path: '/sellside-landing-page',
+    element: <SellSideLandingPage />
+  },
+  {
+    path: '/pricing-plans',
+    element: <PricingPlans />
+  },
+  {
+    path: '/contacts',
+    element: <Contacts />
+  },
+  {
+    path: '/faq',
+    element: <FAQ />
+  },
+  {
+    path: '/about-us',
+    element: <AboutUs />
+  },
+  {
+    path: '/start-ip-landing-page-early-stage',
+    element: <StartupLandingPageEarlyStage />
+  },
+  {
+    path: '/investor-landing-page-early-stage',
+    element: <InvestorLandingPageEarlyStage />
+  },
+  {
+    path: '/master-landing-page',
+    element: <MasterLandingpage />
   },
   {
     path: '/response-popup',

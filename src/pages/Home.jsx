@@ -86,6 +86,33 @@ const Home = () => {
                 <Link to={'/midmarket-landing-page'}>
                     Mid market Landing Page
                 </Link>
+                <Link to={'/buyside-landing-page'}>
+                    Buy Side Landing Page
+                </Link>
+                <Link to={'/sellside-landing-page'}>
+                    Sell Side Landing Page
+                </Link>
+                <Link to={'/pricing-plans'}>
+                    Pricing Plans
+                </Link>
+                <Link to={'/contacts'}>
+                    Contacts
+                </Link>
+                <Link to={'/faq'}>
+                    FAQ
+                </Link>
+                <Link to={'/about-us'}>
+                    About Us
+                </Link>
+                <Link to={'/start-ip-landing-page-early-stage'}>
+                    Start Up Landing page Early Stage
+                </Link>
+                <Link to={'/investor-landing-page-early-stage'}>
+                    Investor Landing page Early Stage
+                </Link>
+                <Link to={'/master-landing-page'}>
+                    Master Landing page
+                </Link>
             </div>
 
 
