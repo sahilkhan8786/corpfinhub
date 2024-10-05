@@ -2,6 +2,7 @@ import React from 'react'
 import InputBox from '../../components/InputBox'
 import InputPhone from '../../components/InputPhone'
 import InputPhoto from '../../components/InputPhoto'
+import { Link } from 'react-router-dom'
 
 const SignPersonalDetails = () => {
     return (
@@ -46,10 +47,11 @@ const SignPersonalDetails = () => {
                         <InputPhone label="Phone number" name='Phone number' />
 
                     </div>
-
-                    <div className='flex w-full md:w-[393px]'>
-                        <button className='text-white bg-primary w-full p-3 hover:opacity-85 rounded-xl'>Update Company Details</button>
-                    </div>
+                    <Link to='/personal-signin-details'>
+                        <div className='flex w-full md:w-[393px]'>
+                            <button className='text-white bg-primary w-full p-3 hover:opacity-85 rounded-xl'>Update Company Details</button>
+                        </div>
+                    </Link>
                     <p className='absolute bottom-12 hidden md:block'>
                         <span className='text-[#A8A8A8] text-[12px]'>Copyright © 2024 All Rights Reserved</span>
 
@@ -62,7 +64,7 @@ const SignPersonalDetails = () => {
 
 
             </div>
-        </section>
+        </section >
     )
 }
 

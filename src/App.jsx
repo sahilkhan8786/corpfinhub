@@ -31,13 +31,51 @@ import AboutUs from "./pages/landing_pages/AboutUs";
 import StartupLandingPageEarlyStage from "./pages/landing_pages/StartupLandingPageEarlyStage";
 import InvestorLandingPageEarlyStage from "./pages/landing_pages/InvestorLandingPageEarlyStage";
 import MasterLandingpage from "./pages/landing_pages/MasterLandingpage";
+import RootLayout from "./layouts/RootLayout";
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />
+    element: <RootLayout />,
+    children: [
+      {
+        index: true,
+        element: <MasterLandingpage />
+      },
+      {
+        path: '/mid-market-landing-page',
+        element: <MidMarketLandingPage />
+      },
+      {
+        path: '/start-up-landing-page',
+        element: <StartupLandingPageEarlyStage />
+      },
+      {
+        path: '/about',
+        element: <AboutUs />
+      },
+      {
+        path: '/pricing',
+        element: <PricingPlans />
+      },
+      {
+        path: '/contact',
+        element: <Contacts />
+      },
+      {
+        path: '/master-landingpage-early-stage',
+        element: <MasterLandingPageEarlyStage />
+      },
+      {
+        path: '/investor-landing-page-early-stage',
+        element: <InvestorLandingPageEarlyStage />
+      },
+      {
+        path: '/startup-landing-page-early-stage',
+        element: <StartupLandingPageEarlyStage />
+      },
+    ]
   },
-
   {
     path: '/sign-in',
     element: <SignIn />
@@ -47,121 +85,40 @@ const router = createBrowserRouter([
     element: <SignUp />
   },
   {
-    path: '/sign-up-completed',
-    element: <SignupCompleted />
-  },
-  {
-    path: '/sign-peronal-details',
-    element: <SignPersonalDetails />
-  },
-  {
-    path: '/sign-business-details',
-    element: <SignBusinessDetails />
-  },
-  {
     path: '/forgot-password',
     element: <ForgotPassword />
   },
   {
-    path: '/reset-password',
-    element: <ResetPassword />
+    path: '/personal-signin-details',
+    element: <SignPersonalDetails />
   },
   {
-    path: '/maintenance',
-    element: <Maintenance />
+    path: '/sign-in-business-details',
+    element: <SignBusinessDetails />
   },
   {
-    path: '/not-found',
-    element: <Page404 />
+    path: '/signup-completed',
+    element: <SignupCompleted />
   },
   {
     path: '/desktop',
     element: <Desktop1 />
   },
   {
-    path: '/seller-listing-details',
-    element: <SellerListingDetailsPage />
-  },
-  {
-    path: '/dashboard-seller',
-    element: <DashboardSeller />
-  },
-  {
-    path: '/buyers-evaluation',
-    element: <BuyersEvaluation />
-  },
-  {
-    path: '/midmarker-seller-overview',
+    path: '/mid-market-seller-overview',
     element: <MidmarketSellerOverview />
-  },
-  {
-    path: '/start-up-seller-listing-page',
-    element: <StartupSellerLisitngDetailsPage />
-  },
-  {
-    path: '/my-lisitng-start-up-seller',
-    element: <MyListingStartupSeller />
-  },
-  {
-    path: '/evaluate-buyer-start-up-seller',
-    element: <EvaluateBuyerStartupSeller />
-  },
-  {
-    path: '/evaluate-buyer-start-up-seller-response',
-    element: <EvaluateBuyerStartupSellerResponse />
   },
   {
     path: '/start-up-seller-overview',
     element: <StartSellerOverview />
   },
   {
-    path: '/buyside-landing-page',
-    element: <BuysideLandingPage />
+    path: '/Mid market buyer dashboard',
+    // element: <Midma />
   },
-  {
-    path: '/sellside-landing-page',
-    element: <SellSideLandingPage />
-  },
-  {
-    path: '/pricing-plans',
-    element: <PricingPlans />
-  },
-  {
-    path: '/contacts',
-    element: <Contacts />
-  },
-  {
-    path: '/faq',
-    element: <FAQ />
-  },
-  {
-    path: '/about-us',
-    element: <AboutUs />
-  },
-  {
-    path: '/start-ip-landing-page-early-stage',
-    element: <StartupLandingPageEarlyStage />
-  },
-  {
-    path: '/investor-landing-page-early-stage',
-    element: <InvestorLandingPageEarlyStage />
-  },
-  {
-    path: '/master-landing-page',
-    element: <MasterLandingpage />
-  },
-  {
-    path: '/response-popup',
-    element: <ResponsePopup />
-  },
-  {
-    path: '/midmarket-landing-page',
-    element: <MidMarketLandingPage />
-  },
-  {
-    path: '/master-landing-page-early-stage',
-    element: <MasterLandingPageEarlyStage />
-  },
+
+
+
 ]);
 
 export default function App() {

@@ -1,6 +1,7 @@
 import React from 'react'
 import { signUpList, signUpOptionsList } from '../../constant'
 import InputBox from '../../components/InputBox'
+import { Link } from 'react-router-dom'
 
 const SignIn = () => {
     return (
@@ -39,9 +40,13 @@ const SignIn = () => {
                         <InputBox label="Password" name='Password' />
                     </div>
                     <div className='flex w-full md:w-[393px] items-center gap-6'>
-                        <p className='font-normal text-[14px]
+                        <Link to={'/forgot-password'}>
+                            <p className='font-normal text-[14px]
                         text-[#47464A] w-fit whitespace-nowrap'>Forgot password ?</p>
-                        <button className='text-white bg-primary w-full p-3 hover:opacity-85'>Sign In</button>
+                        </Link>
+                        <Link to={'/personal-signin-details'} className='w-full'>
+                            <button className='text-white bg-primary w-full p-3 hover:opacity-85'>Sign In</button>
+                        </Link>
                     </div>
                     <div className='w-full md:w-[393px] relative my-3'>
                         <p className='w-full  bg-gray-300 h-[1px]'></p>
@@ -52,15 +57,11 @@ const SignIn = () => {
                         <h3 className='text-[#202020] font-medium text-[14px]' >Sign in with</h3>
                         <article className='  w-full md:w-[393px] flex items-center justify-between mt-6 flex-wrap mb-6 gap-2'>
                             <article className='  w-full md:w-[393px] flex items-center justify-between mt-6 flex-wrap mb-6 gap-2'>
-                                <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
+                                <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1  justify-center'>
                                     <img src='/google logo.png' alt="" />
                                     <p >Google</p>
                                 </div>
-                                <div className=' items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 hidden md:flex'>
-                                    <img src='/Windows.png' alt="" />
-                                    <p >Microsoft</p>
-                                </div>
-                                <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
+                                <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px] w-full flex-1  justify-center'>
                                     <img src='/linkedIn.png' alt="" />
                                     <p >LinkedIn</p>
                                 </div>
@@ -71,7 +72,9 @@ const SignIn = () => {
 
 
                             <p className='sm:text-[14px] font-medium flex items-center justify-center w-full md:mt-6 flex-row whitespace-nowrap text-[10px]'>Don’t have a CorpFin Hub account?
-                                <span className='text-primary hover:cursor-pointer hover:underline'>Create an account</span>
+                                <Link to={'/sign-up'}>
+                                    <span className='text-primary hover:cursor-pointer hover:underline'>Create an account</span>
+                                </Link>
                             </p>
                         </article>
                     </div>

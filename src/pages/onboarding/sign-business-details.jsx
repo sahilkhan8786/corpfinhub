@@ -1,6 +1,7 @@
 import React from 'react'
 import InputBox from '../../components/InputBox'
 import InputSelect from '../../components/InputSelect'
+import { Link } from 'react-router-dom'
 
 const SignBusinessDetails = () => {
     return (
@@ -50,10 +51,11 @@ const SignBusinessDetails = () => {
                     <div className='  w-full md:w-[393px] '>
                         <InputSelect name="How did you hear about us?" id='How did you hear about us?' />
                     </div>
-
-                    <div className='flex w-full md:w-[393px]'>
-                        <button className='text-white bg-primary w-full p-3 hover:opacity-85'>Join CorpFin Hub</button>
-                    </div>
+                    <Link to={'/signup-completed'}>
+                        <div className='flex w-full md:w-[393px]'>
+                            <button className='text-white bg-primary w-full p-3 hover:opacity-85'>Join CorpFin Hub</button>
+                        </div>
+                    </Link>
                     <p className='absolute bottom-12 hidden md:block'>
                         <span className='text-[#A8A8A8] text-[12px]'>Copyright © 2024 All Rights Reserved</span>
 

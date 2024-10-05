@@ -4,8 +4,8 @@ import Footer from '../../components/Footer'
 
 const InvestorLandingPageEarlyStage = () => {
     return (
-        <section>
-            <Header />
+        <>
+
             <div className="w-full h-[90vh]">
                 <article className={`relative flex flex-col text-white justify-center h-full w-full bg-[#A8A8A8] bg-center bg-cover bg-no-repeat`}>
                     <div className="max-w-[1440px] mx-auto flex flex-col gap-8 w-full px-2 relative">
@@ -150,8 +150,7 @@ const InvestorLandingPageEarlyStage = () => {
 
                 </div>
             </div>
-            <Footer />
-        </section>
+        </>
     )
 }
 

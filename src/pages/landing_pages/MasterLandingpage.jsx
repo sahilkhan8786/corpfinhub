@@ -2,11 +2,11 @@ import React from 'react'
 import Footer from '../../components/Footer'
 import MidmarketLandingPageDetails from '../../components/MidmarketLandingPageDetails'
 import Header from '../../components/Header'
+import { Link } from 'react-router-dom'
 
 const MasterLandingpage = () => {
     return (
-        <section className='w-full min-h-screen'>
-            <Header />
+        <>
             <div className="w-full h-[90vh]">
                 <article className={`relative flex flex-col text-white justify-center h-full w-full bg-[url('/hero-midmarker-landingpage.png')] bg-center bg-cover bg-no-repeat`}>
                     <div className="max-w-[1440px] mx-auto flex flex-col gap-8 w-full px-2">
@@ -17,31 +17,34 @@ const MasterLandingpage = () => {
                             Blandit cursus risus at ultrices. Viverra mauris in aliquam sem fringilla. Turpis egestas sed tempus urna et pharetra pharetra massa.
                         </p>
                         <div className="z-20 flex flex-col md:flex-row gap-3">
-                            <button className="uppercase flex gap-3 items-center justify-between flex-col text-[18px] md:text-4xl  px-3 py-5 rounded-md hover:opacity-85 h-[200px] bg-gradient-to-b from-[#FF9A00] to-[#8A5300]">
-                                <span>Mid-MARKET</span>
-                                <div className='w-full flex items-center justify-end'>
+                            <Link to={'/mid-market-landing-page'}>
+                                <button className="uppercase flex gap-3 items-center justify-between flex-col text-[18px] md:text-4xl  px-3 py-5 rounded-md hover:opacity-85 h-[200px] bg-gradient-to-b from-[#FF9A00] to-[#8A5300]">
+                                    <span>Mid-MARKET</span>
+                                    <div className='w-full flex items-center justify-end'>
 
-                                    <img src="/Arrow.png" alt="Arrow icon" />
-                                </div>
-                            </button>
-                            <button className="uppercase flex gap-3 items-center justify-between flex-col text-[18px] md:text-4xl  px-3 py-5 rounded-md hover:opacity-85 h-[200px] bg-gradient-to-b from-[#1076FF] to-[#022D67]">
-                                <span>START-UP</span>
-                                <div className='w-full flex items-center justify-end'>
+                                        <img src="/Arrow.png" alt="Arrow icon" />
+                                    </div>
+                                </button>
+                            </Link>
+                            <Link to={'/start-up-landing-page'}>
+                                <button className="uppercase flex gap-3 items-center justify-between flex-col text-[18px] md:text-4xl  px-3 py-5 rounded-md hover:opacity-85 h-[200px] bg-gradient-to-b from-[#1076FF] to-[#022D67]">
+                                    <span>START-UP</span>
+                                    <div className='w-full flex items-center justify-end'>
 
-                                    <img src="/Arrow.png" alt="Arrow icon" />
-                                </div>
-                            </button>
+                                        <img src="/Arrow.png" alt="Arrow icon" />
+                                    </div>
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </article>
-            </div>
+            </div >
             <div className='max-w-[1440px] mx-auto  flex items-center justify-center w-full'>
 
                 <img src="/051j (1).png" alt="" className='w-full  my-12' />
             </div>
             <MidmarketLandingPageDetails toShow2={false} toShow3={false} />
-            <Footer />
-        </section>
+        </>
     )
 }
 

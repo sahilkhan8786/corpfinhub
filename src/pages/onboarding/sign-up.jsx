@@ -2,6 +2,7 @@ import React from 'react'
 import { signUpList, signUpOptionsList } from '../../constant'
 import InputBox from '../../components/InputBox'
 import InputPhone from '../../components/InputPhone'
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
     return (
@@ -39,12 +40,15 @@ const SignUp = () => {
                         <InputBox label="First name" name='First name' />
                         <InputBox label="Last name" name='Last name' />
                     </div>
-                    <div className='  w-full md:w-[393px]  '>
+                    {/* <div className='  w-full md:w-[393px]  '>
                         <InputPhone label="Phone number" name='Phone number' />
 
-                    </div>
+                    </div> */}
                     <div className='  w-full md:w-[393px]  '>
                         <InputBox label="Password" name='Password' />
+                    </div>
+                    <div className='  w-full md:w-[393px]  '>
+                        <InputBox label="Confirm Password" name='Confirm Password' />
                     </div>
                     <div className='flex w-full md:w-[393px]'>
                         <button className='text-white bg-primary w-full p-3 hover:opacity-85'>Sign Up</button>
@@ -53,26 +57,28 @@ const SignUp = () => {
                     <div className='  w-full md:w-[393px] text-center'>
                         <h3 className='text-[#202020] font-medium text-[14px]' >Sign up with</h3>
                         <article className='  w-full md:w-[393px] flex items-center justify-between mt-6 flex-wrap mb-6 gap-2'>
-                            <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
+                            <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1  justify-center'>
                                 <img src='/google logo.png' alt="" />
                                 <p >Google</p>
                             </div>
-                            <div className=' items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 hidden md:flex'>
-                                <img src='/Windows.png' alt="" />
-                                <p >Microsoft</p>
-                            </div>
-                            <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px]w-full flex-1 '>
+
+                            <div className='flex items-center gap-5 border p-3 hover:bg-gray-200 cursor-pointer  min-w-[120px] w-full flex-1  justify-center'>
                                 <img src='/linkedIn.png' alt="" />
                                 <p >LinkedIn</p>
                             </div>
 
                             <div className='flex gap-4 px-3 text-left font-normal text-[10px] text-[#84818A] mt-6 sm:text-[12px]'>
                                 <input type="checkbox" />
-                                <p>By clicking Create account, I agree that I have read and accepted the Terms of Use and Privacy Policy.</p>
+                                <Link to='/desktop'>
+                                    <p>By clicking Create account, I agree that I have read and accepted the Terms of Use and Privacy Policy.</p>
+                                </Link>
                             </div>
-                            <p className='text-[10px] sm:text-[14px ] font-medium flex items-center justify-center w-full mt-6 flex-row md:flex-col sm:flex-row whitespace-nowrap'>Already have a CorpFin Hub account?
-                                <span className='text-primary hover:cursor-pointer hover:underline'>Sign In</span>
+                            <p className='sm:text-[14px] font-medium flex items-center justify-center w-full md:mt-6 flex-row whitespace-nowrap text-[10px]'>Already have a CorpFin Hub account?
+                                <Link to={'/sign-in'}>
+                                    <span className='text-primary hover:cursor-pointer hover:underline'>Sign In</span>
+                                </Link>
                             </p>
+
                         </article>
                     </div>
                     <p className='absolute bottom-2 md:bottom-12 hidden md:block'>

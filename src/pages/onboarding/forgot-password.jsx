@@ -1,10 +1,11 @@
 import React from 'react'
 import { signUpList } from '../../constant'
 import InputBox from '../../components/InputBox'
+import { Link } from 'react-router-dom'
 
 const ForgotPassword = () => {
     return (
-        <section className=' md:bg-primary w-full min-h-screen flex flex-col p-2'>
+        <section className=' md:bg-primary w-full min-h-screen flex flex-col '>
             <div className=' flex w-full flex-col   md:flex-row'>
                 {/* LEFT */}
                 <div className='md:text-white flex-1 flex items-center justify-center flex-col md:relative mt-8 md:mt-0 px-3 md:px-0'>
@@ -51,7 +52,9 @@ const ForgotPassword = () => {
 
 
                             <p className='text-[14px] font-medium flex items-center justify-center w-full mt-6 flex-row '>Just remember?
-                                <span className='text-primary hover:cursor-pointer hover:underline'>Sign in</span>
+                                <Link to={'/sign-in'}>
+                                    <span className='text-primary hover:cursor-pointer hover:underline'>Sign in</span>
+                                </Link>
                             </p>
                         </article>
                     </div>

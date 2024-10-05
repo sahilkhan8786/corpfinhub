@@ -4,8 +4,7 @@ import Footer from '../../components/Footer'
 
 const StartupLandingPageEarlyStage = () => {
     return (
-        <section>
-            <Header />
+        <>
             <div className="w-full h-[90vh]">
                 <article className={`relative flex flex-col text-white justify-center h-full w-full bg-[url('bg.png')] bg-center bg-cover bg-no-repeat`}>
                     <div className="max-w-[1440px] mx-auto flex flex-col gap-8 w-full px-2">
@@ -169,8 +168,7 @@ const StartupLandingPageEarlyStage = () => {
 
                 </div>
             </div>
-            <Footer />
-        </section>
+        </>
     )
 }
 

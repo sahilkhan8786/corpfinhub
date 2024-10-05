@@ -5,8 +5,7 @@ import Footer from '../../components/Footer'
 
 const MidMarketLandingPage = () => {
     return (
-        <section className='w-full min-h-screen'>
-            <Header />
+        <>
             <div className="w-full h-[90vh]">
                 <article className={`relative flex flex-col text-white justify-center h-full w-full bg-[url('/hero-midmarker-landingpage.png')] bg-center bg-cover bg-no-repeat`}>
                     <div className="max-w-[1440px] mx-auto flex flex-col gap-8 w-full px-2">
@@ -37,8 +36,8 @@ const MidMarketLandingPage = () => {
             </div>
 
             <MidmarketLandingPageDetails />
-            <Footer />
-        </section>
+
+        </>
     )
 }
 

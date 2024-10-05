@@ -4,8 +4,8 @@ import Footer from '../../components/Footer'
 
 const Contacts = () => {
     return (
-        <section>
-            <Header />
+        <>
+
             <div className="w-full h-[70vh] ">
                 <article className={`relative flex flex-col text-white justify-center h-full w-full bg-[#D8D8D8] bg-cover bg-center px-3 md:px-0 `}>
                     <div className="max-w-[1440px] mx-auto flex flex-col gap-8 w-full px-2 items-start justify-end bg- h-full " >
@@ -91,8 +91,7 @@ const Contacts = () => {
                     </div>
                 </form>
             </div>
-            <Footer />
-        </section>
+        </>
     )
 }
 
