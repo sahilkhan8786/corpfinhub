@@ -31,16 +31,15 @@ const InvestorLandingPageEarlyStage = () => {
                     </div>
                 </article>
             </div>
-
-            <div className='flex flex-col gap-6 max-w-[1400px] mx-auto my-6'>
-                <h1 className='font-semibold text-[50px] text-[#0D0D0D] my-6'>
+            <div className='flex flex-col gap-6 max-w-[1400px] mx-auto my-6 '>
+                <h1 className='font-semibold text-center text-[28px] md:text-[50px] text-[#0D0D0D] my-6'>
                     Helping Investors
                 </h1>
-                <article className='flex gap-4 items-center justify-center'>
-                    <img src="/bg-image.png" alt="" />
-                    <p className='text-[18px] text-[#3B3B3B]'>Pharetra sit amet aliquam id diam. Sed enim ut sem viverra aliquet eget sit. Lorem dolor sed viverra ipsum nunc aliquet.</p>
+                <article className='flex gap-4 items-center justify-center flex-col px-2 md:flex-row'>
+                    <img src="/bg-image.png" alt=" " className='w-full md:w-1/2 ' />
+                    <p className='text-[14px] md:text-[18px] text-[#3B3B3B]'>Pharetra sit amet aliquam id diam. Sed enim ut sem viverra aliquet eget sit. Lorem dolor sed viverra ipsum nunc aliquet.</p>
                 </article>
-                <article className='flex items-center justify-between gap-6 mt-16'>
+                <article className='flex items-center justify-between gap-6 mt-16 flex-col md:flex-row'>
                     <div>
                         <h1 className='text-[#0D0D0D] font-medium text-[28px]  text-center'>Reliability</h1>
                         <p className=' text-[16px] text-center text-[#3B3B3B]'>We provide secure financial <br /> protection for unforeseen events</p>
@@ -65,54 +64,54 @@ const InvestorLandingPageEarlyStage = () => {
             <div className='bg-[#F8F8F8] py-12'>
 
 
-                <article className={`w-full mx-auto max-w-[1440px]  px-4 md:p-0 mb-12   flex items-center justify-between border-b border-b-[#D8D8D8]`}>
+                <article className={`w-full mx-auto max-w-[1440px]  px-4 md:p-0 mb-12   flex items-center justify-between border-b border-b-[#D8D8D8] flex-col md:flex-row`}>
 
-                    <h1 className='text-primary text-[50px] font-semibold py-12 w-full sm:w-[550px]'>Evaluation
+                    <h1 className='text-primary text-[50px] font-semibold py-12 w-full sm:w-[550px] text-center md:text-start'>Evaluation
                         Process</h1>
-                    <p className='text-[#3B3B3B] text-[18px] w-[306px]'>Committed to Minimizing Risks and Fostering Enterprise Growth for a Confident and Secure Future</p>
+                    <p className='text-[#3B3B3B] text-[14px] text-center sm:text-[18px] w-full sm:w-[306px]'>Committed to Minimizing Risks and Fostering Enterprise Growth for a Confident and Secure Future</p>
                 </article>
-                <article className={`w-full mx-auto max-w-[1440px]  px-4 md:p-0 mb-12  ]  flex items-center justify-between`}>
-                    <div className='flex flex-col gap-4 w-full px-4'>
+                <article className={`w-full mx-auto max-w-[1440px]  px-4 md:p-0 mb-12    flex items-center justify-between flex-col gap-4 md:flex-row md:gap-0 text-center md:text-start`}>
+                    <div className='flex flex-col gap-4 w-full px-4 '>
 
-                        <div>
+                        <div className='flex flex-col gap-2 md:block '>
                             <h1 className='text-[25px] font-medium text-[#0D0D0D]'>Versatile Solutions</h1>
-                            <p className='text-[16px] text-[#3B3B3B] w-full sm:w-[395px]'>Elit pellentesque habitant morbi tristique senectus et. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus</p>
+                            <p className='text-[14px] md:text-[16px] text-[#3B3B3B] w-full md:w-[395px]'>Elit pellentesque habitant morbi tristique senectus et. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus</p>
                         </div>
-                        <div>
+                        <div className='flex flex-col gap-2 md:block '>
                             <h1 className='text-[25px] font-medium text-[#0D0D0D]'>Versatile Solutions</h1>
-                            <p className='text-[16px] text-[#3B3B3B] w-full sm:w-[395px]'>Elit pellentesque habitant morbi tristique senectus et. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus</p>
+                            <p className='text-[14px] md:text-[16px] text-[#3B3B3B] w-full md:w-[395px]'>Elit pellentesque habitant morbi tristique senectus et. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus</p>
                         </div>
                     </div>
                     <div className='flex flex-col gap-4 w-full px-4'>
 
-                        <div>
+                        <div className='flex flex-col gap-2 md:block '>
                             <h1 className='text-[25px] font-medium text-[#0D0D0D]'>Versatile Solutions</h1>
-                            <p className='text-[16px] text-[#3B3B3B] w-full sm:w-[395px]'>Elit pellentesque habitant morbi tristique senectus et. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus</p>
+                            <p className='text-[14px] md:text-[16px] text-[#3B3B3B] w-full md:w-[395px]'>Elit pellentesque habitant morbi tristique senectus et. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus</p>
                         </div>
-                        <div>
+                        <div className='flex flex-col gap-2 md:block '>
                             <h1 className='text-[25px] font-medium text-[#0D0D0D]'>Versatile Solutions</h1>
-                            <p className='text-[16px] text-[#3B3B3B] w-full sm:w-[395px]'>Elit pellentesque habitant morbi tristique senectus et. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus</p>
+                            <p className='text-[14px] md:text-[16px] text-[#3B3B3B] w-full md:w-[395px]'>Elit pellentesque habitant morbi tristique senectus et. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus</p>
                         </div>
                     </div>
                 </article>
             </div>
-            <div className='w-full flex max-w-[1440px] mx-auto my-12'>
+            <div className='w-full flex max-w-[1440px] mx-auto md:my-12 my-6 flex-col-reverse  md:flex-row '>
                 <article className='flex w-full flex-col items-start justify-around
-                mt-16 '>
+                md:mt-16 gap-6 md:gap-0 px-2'>
                     <div>
 
-                        <h1 className='font-semibold text-[#0D0D0D] text-[68px]'>Trusted NDA</h1>
-                        <p className='text-[#3B3B3B] text-[18px]'>Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Turpis egestas sed tempus urna</p>
-                        <p className='text-[#3B3B3B] text-[18px]'>Fames ac turpis egestas integer eget aliquet. Convallis posuere morbi leo urna. Consequat mauris nunc congue nisi vitae </p>
+                        <h1 className='font-semibold text-[#0D0D0D] text-[48px] md:text-[68px]'>Trusted NDA</h1>
+                        <p className='text-[#3B3B3B] text-[14px] md:text-[18px]'>Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Turpis egestas sed tempus urna</p>
+                        <p className='text-[#3B3B3B] text-[14px] md:text-[18px]'>Fames ac turpis egestas integer eget aliquet. Convallis posuere morbi leo urna. Consequat mauris nunc congue nisi vitae </p>
                     </div>
                     <button className='uppercase bg-primary text-white px-3 py-4 font-bold text-[17px]'>Explore plans</button>
                 </article>
-                <img src="/home-and-family-insurance-concept-2023-11-27-04-50-01-utc .png" alt="" className='' />
+                <img src="/home-and-family-insurance-concept-2023-11-27-04-50-01-utc .png" alt="" className='w-full md:w-1/2 px-2' />
             </div>
 
             <div className='bg-[#F8F8F8] py-16'>
 
-                <div className='flex w-full max-w-[1440px] mx-auto my-16  gap-12'>
+                <div className='flex w-full max-w-[1440px] mx-auto my-16  gap-12 flex-col md:flex-row'>
                     <article className=' w-full flex flex-col gap-6'>
                         <h1 className=' font-semibold text-[40px] text-[#0D0D0D]'>Find your <br /> Right Business</h1>
                         <p className='text-[#3B3B3B] text-[12px]'>We’re happy to answer any questions you may have <br /> and help you determine which of our services best <br /> fit your needs</p>
@@ -122,26 +121,28 @@ const InvestorLandingPageEarlyStage = () => {
                         <p className='font-medium text-[#0D0D0D] text-[24px]'>designby@chasvi.com</p>
                     </article>
                     <article >
-
-                        <form className='flex items-center justify-center  w-[848px] my-12 flex-col gap-12'>
-                            <div className='w-full flex justify-between items-center gap-4'>
-                                <input type="text" placeholder='Your Name' className=' outline-none focus:outline-none border-b  flex-1 bg-transparent' />
-                                <input type="email" placeholder='Your Email'
-                                    className=' outline-none focus:outline-none border-b  flex-1 bg-transparent' />
+                        <h1 className='font-semibold text-[#0D0D0D] text-[28px] md:text-[50px] text-center'>Questions?
+                            <br />
+                            We’re here to help
+                        </h1>
+                        <form className='flex items-center justify-center w-full  xl:w-[848px] my-12 flex-col gap-12 '>
+                            <div className='w-full flex justify-between items-center gap-4 flex-col sm:flex-row'>
+                                <input type="text" placeholder='Full Name' className=' outline-none focus:outline-none border-b  flex-1 w-full bg-transparent' />
+                                <input type="email" placeholder='Email'
+                                    className=' outline-none focus:outline-none border-b  w-full flex-1 bg-transparent' />
                             </div>
-                            <div className='w-full flex justify-between items-center gap-4'>
-                                <select type="number" placeholder='' className=' outline-none focus:outline-none border-b  flex-1 text-[#6A6A6A] bg-transparent'>
-                                    <option value="Select Business Type">
-                                        Select Business Type
+                            <div className='w-full flex justify-between items-center gap-4 flex-col sm:flex-row'>
+                                <input type="number" placeholder='Phone Number' className=' outline-none focus:outline-none border-b  flex-1 w-full bg-transparent' />
+                                <select type="number" placeholder='' className=' outline-none focus:outline-none border-b  flex-1 w-full text-gray-400 bg-transparent my-4' >
+                                    <option value="You registered as?">
+                                        You registered as?
                                     </option>
                                 </select>
-                                <input type="numer" placeholder='Phone Number'
-                                    className=' outline-none focus:outline-none border-b  flex-1 bg-transparent' />
                             </div>
                             <div className='w-full flex'>
-                                <textarea name="" id="" rows={5} className=' outline-none focus:outline-none border-b  flex-1 bg-transparent' placeholder='Your Message '></textarea>
+                                <textarea name="" id="" rows={5} className=' outline-none focus:outline-none border-b  flex-1 bg-transparent' placeholder='Additional Requirements or Questions'></textarea>
                             </div>
-                            <div className='w-full flex items-center justify-end'>
+                            <div className='w-full flex items-center justify-center'>
                                 <button className='uppercase bg-primary py-4 px-6 text-white font-bold text-[17px]'>submit now</button>
 
                             </div>

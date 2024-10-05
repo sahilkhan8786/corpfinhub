@@ -1,6 +1,5 @@
 import React from 'react'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+
 
 const PricingPlans = () => {
     return (
@@ -11,13 +10,13 @@ const PricingPlans = () => {
                     <div className="max-w-[1440px] mx-auto flex flex-col gap-8 w-full px-2 items-start justify-end bg- h-full " >
 
 
-                        <h1 className='  bg-white text-black font-semibold text-[72px] px-2 pr-16   text-left'>Pricing Plans</h1>
+                        <h1 className='  bg-white text-black font-semibold text-[40px] md:text-[72px] px-2 md:pr-16   text-left'>Pricing Plans</h1>
                     </div>
                 </article>
             </div>
-            <div className='w-full max-w-[1440px] mx-auto  my-24 flex gap-4 items-center justify-center'>
+            <div className='w-full max-w-[1440px] mx-auto  my-24 flex gap-4 items-center justify-center flex-col'>
                 <article className='border w-[312px] px-4 py-6 rounded-xl '>
-                    <h1 className='font-semibold text-16px text-[#18191C] my-4'>Basic</h1>
+                    <h1 className='font-semibold text-[16px] text-[#18191C] my-4'>Basic</h1>
                     <p className='text-[14px] text-[#767F8C]'>Praesent eget pulvinar orci. Duis ut pellentesque ligula convalis.</p>
                     <p className='mb-3'>
                         <span className='font-medium text-[36px] text-primary font-inter'>£19</span>

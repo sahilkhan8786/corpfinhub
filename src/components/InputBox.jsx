@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const InputBox = ({ label, name }) => {
+const InputBox = ({ label, name, type = 'text' }) => {
+    const [inputValue, setInputValue] = useState(''); // State to track input value
+
+    const handleChange = (e) => {
+        setInputValue(e.target.value); // Update state on input change
+    };
+
     return (
         <div className='relative'>
             <input
                 id={name}
                 name={name}
-                className='w-full  border border-[#DCDBDD] p-3 peer placeholder-transparent rounded-md focus:outline-none '
+                className='w-full border border-[#DCDBDD] p-3 peer placeholder-transparent rounded-md focus:outline-none'
                 placeholder=' '
-                type='text'
+                type={type}
+                value={inputValue}
+                onChange={handleChange} // Track changes to input
+                required
             />
             <label
                 htmlFor={name}
-                className='absolute left-3 top-3 text-gray-500 transition-all duration-300  bg-white  peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
-                peer-placeholder-shown:px-2
-                peer-focus:-top-3 peer-focus:text-sm peer-focus:text-[#84818A] cursor-pointer whitespace-nowrap'
+                className={`absolute left-3 transition-all duration-300 bg-white cursor-pointer whitespace-nowrap
+          ${inputValue ? '-top-3 text-sm text-[#84818A]' : 'top-3 text-base'} peer-focus:-top-3 peer-focus:text-sm peer-focus:text-[#84818A]`}
             >
                 {label}
                 <span className='text-red-500'>*</span>

@@ -1,7 +1,5 @@
 import React from 'react'
-import Footer from '../../components/Footer'
 import MidmarketLandingPageDetails from '../../components/MidmarketLandingPageDetails'
-import Header from '../../components/Header'
 import { Link } from 'react-router-dom'
 
 const MasterLandingpage = () => {
@@ -16,8 +14,8 @@ const MasterLandingpage = () => {
                         <p className="z-20 text-[14px] text-[#F8F8F8] w-full max-w-[375px]">
                             Blandit cursus risus at ultrices. Viverra mauris in aliquam sem fringilla. Turpis egestas sed tempus urna et pharetra pharetra massa.
                         </p>
-                        <div className="z-20 flex flex-col md:flex-row gap-3">
-                            <Link to={'/mid-market-landing-page'}>
+                        <div className="z-20 flex  gap-3">
+                            <Link to={'/mid-market-landing-page'} className=''>
                                 <button className="uppercase flex gap-3 items-center justify-between flex-col text-[18px] md:text-4xl  px-3 py-5 rounded-md hover:opacity-85 h-[200px] bg-gradient-to-b from-[#FF9A00] to-[#8A5300]">
                                     <span>Mid-MARKET</span>
                                     <div className='w-full flex items-center justify-end'>
@@ -26,8 +24,8 @@ const MasterLandingpage = () => {
                                     </div>
                                 </button>
                             </Link>
-                            <Link to={'/start-up-landing-page'}>
-                                <button className="uppercase flex gap-3 items-center justify-between flex-col text-[18px] md:text-4xl  px-3 py-5 rounded-md hover:opacity-85 h-[200px] bg-gradient-to-b from-[#1076FF] to-[#022D67]">
+                            <Link to={'/start-up-landing-page'} >
+                                <button className="uppercase flex gap-3 items-center  w-[130px] sm:w-full  justify-between flex-col text-[18px] md:text-4xl  px-3 py-5 rounded-md hover:opacity-85 h-[200px] bg-gradient-to-b from-[#1076FF] to-[#022D67]">
                                     <span>START-UP</span>
                                     <div className='w-full flex items-center justify-end'>
 

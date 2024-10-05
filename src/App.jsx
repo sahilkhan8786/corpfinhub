@@ -32,6 +32,9 @@ import StartupLandingPageEarlyStage from "./pages/landing_pages/StartupLandingPa
 import InvestorLandingPageEarlyStage from "./pages/landing_pages/InvestorLandingPageEarlyStage";
 import MasterLandingpage from "./pages/landing_pages/MasterLandingpage";
 import RootLayout from "./layouts/RootLayout";
+import StartUpInvestorDashboard from "./pages/Startupuppages/StartUpInvestorDashboard";
+import MidmarketBuyerDashboard from "./pages/Startupuppages/MidmarketBuyerDashboard";
+import StaticLandingPage from "./pages/landing_pages/StaticLandingPage";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +62,10 @@ const router = createBrowserRouter([
         element: <PricingPlans />
       },
       {
+        path: '/faq',
+        element: <FAQ />
+      },
+      {
         path: '/contact',
         element: <Contacts />
       },
@@ -73,6 +80,18 @@ const router = createBrowserRouter([
       {
         path: '/startup-landing-page-early-stage',
         element: <StartupLandingPageEarlyStage />
+      },
+      {
+        path: '/buyside-landing-page',
+        element: <BuysideLandingPage />
+      },
+      {
+        path: '/sellside-landing-page',
+        element: <SellSideLandingPage />
+      },
+      {
+        path: '/static-landing-page',
+        element: <StaticLandingPage />
       },
     ]
   },
@@ -113,8 +132,12 @@ const router = createBrowserRouter([
     element: <StartSellerOverview />
   },
   {
-    path: '/Mid market buyer dashboard',
-    // element: <Midma />
+    path: '/start-up-investor-dashboard',
+    element: <StartUpInvestorDashboard />
+  },
+  {
+    path: '/mid-market-buyer-dashboard',
+    element: <MidmarketBuyerDashboard />
   },
 
 

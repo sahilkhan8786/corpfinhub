@@ -2,6 +2,7 @@ import React from 'react'
 import { signUpList, signUpOptionsList } from '../../constant'
 import InputBox from '../../components/InputBox'
 import { Link } from 'react-router-dom'
+import InputPassword from '../../components/InputPassword'
 
 const SignIn = () => {
     return (
@@ -37,7 +38,7 @@ const SignIn = () => {
                     </div>
 
                     <div className='  w-full md:w-[393px]  '>
-                        <InputBox label="Password" name='Password' />
+                        <InputPassword label="Password" name='Password' />
                     </div>
                     <div className='flex w-full md:w-[393px] items-center gap-6'>
                         <Link to={'/forgot-password'}>

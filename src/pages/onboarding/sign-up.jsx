@@ -1,8 +1,8 @@
 import React from 'react'
-import { signUpList, signUpOptionsList } from '../../constant'
+import { signUpList } from '../../constant'
 import InputBox from '../../components/InputBox'
-import InputPhone from '../../components/InputPhone'
 import { Link } from 'react-router-dom'
+import InputPassword from '../../components/InputPassword'
 
 const SignUp = () => {
     return (
@@ -45,10 +45,10 @@ const SignUp = () => {
 
                     </div> */}
                     <div className='  w-full md:w-[393px]  '>
-                        <InputBox label="Password" name='Password' />
+                        <InputPassword label="Password" name='Password' />
                     </div>
                     <div className='  w-full md:w-[393px]  '>
-                        <InputBox label="Confirm Password" name='Confirm Password' />
+                        <InputPassword label="Confirm Password" name='Confirm Password' />
                     </div>
                     <div className='flex w-full md:w-[393px]'>
                         <button className='text-white bg-primary w-full p-3 hover:opacity-85'>Sign Up</button>

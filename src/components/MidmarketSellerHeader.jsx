@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MidmarketSellerHeader = () => {
     return (
@@ -8,9 +9,11 @@ const MidmarketSellerHeader = () => {
                     <img src="/logoDark.png" alt="" />
                 </div>
                 <ul className='md:flex items-center gap-8 hidden px-2'>
-                    <li className='font-medium text-[14px] hover:text-primary cursor-pointer'>
-                        About Us
-                    </li>
+                    <Link to={'/about'}>
+                        <li className='font-medium text-[14px] hover:text-primary cursor-pointer'>
+                            About Us
+                        </li>
+                    </Link>
                     <li className='font-medium text-[14px] hover:text-primary cursor-pointer'>
                         The Hub
                     </li>
@@ -28,7 +31,7 @@ const MidmarketSellerHeader = () => {
                 <img src="/menu.png" alt="" className='pr-4 cursor-pointer block md:hidden' />
 
             </nav>
-        </header>
+        </header >
     )
 }
 
